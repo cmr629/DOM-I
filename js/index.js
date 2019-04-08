@@ -38,27 +38,25 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"]);
+document.getElementById("logo-img").setAttribute('src', siteContent["nav"]["img-src"]);
 
-let header = document.getElementById("cta-img");
-header.setAttribute('src', siteContent["cta"]["img-src"]);
+document.getElementById("cta-img").setAttribute('src', siteContent["cta"]["img-src"]);
 
-let mainContentImg = document.getElementById("middle-img");
-mainContentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+document.getElementById("middle-img").setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
 let navItems = document.querySelectorAll(".container header nav a");
  
 for (let i = 0; i < navItems.length; i++){
   navItems[i].textContent = siteContent["nav"]["nav-item-" + (i + 1)];
+
  
 }
 
-let ctaH1 = document.querySelector(".cta-text h1");
-ctaH1.textContent = siteContent["cta"]["h1"];
  
-let ctaBtn = document.querySelector(".cta-text button");
-ctaBtn.textContent = siteContent["cta"]["button"];
+
+document.querySelector(".cta-text h1").textContent = siteContent["cta"]["h1"];
+ 
+document.querySelector(".cta-text button").textContent = siteContent["cta"]["button"];
 
 let mainContentTopH4 = document.querySelectorAll(".top-content .text-content h4");
 
@@ -82,3 +80,11 @@ let mainContentBottomP = document.querySelectorAll(".bottom-content .text-conten
 mainContentBottomP[0].textContent = siteContent["main-content"]["services-content"];
 mainContentBottomP[1].textContent = siteContent["main-content"]["product-content"];
 mainContentBottomP[2].textContent = siteContent["main-content"]["vision-content"];
+
+let contactH4 = document.querySelector(".contact h4");
+contactH4.textContent = siteContent["contact"]["contact-h4"];
+
+let contactContent = document.querySelectorAll(".contact p");
+contactContent[0].textContent = siteContent["contact"]["address"];
+contactContent[1].textContent = siteContent["contact"]["phone"];
+contactContent[2].textContent = siteContent["contact"]["email"];
