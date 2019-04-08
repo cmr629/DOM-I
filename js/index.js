@@ -49,7 +49,6 @@ let navItems = document.querySelectorAll(".container header nav a");
 for (let i = 0; i < navItems.length; i++){
   navItems[i].textContent = siteContent["nav"]["nav-item-" + (i + 1)];
   navItems[i].style.color = "green";
- 
 }
 
 let navParent = document.querySelector("nav");
@@ -64,7 +63,6 @@ prependA.setAttribute("href", "#");
 prependA.textContent = "Prepend";
 prependA.style.color = "green";
 navParent.prepend(prependA);
- 
 
 document.querySelector(".cta-text h1").textContent = siteContent["cta"]["h1"];
  
@@ -109,12 +107,10 @@ class ButtonEvent{
     this.degrees = 0;
 
     this.button.addEventListener("click", () => {this.onClick()});
- 
-    
   }
 
   onClick(){
-      buttonEvent = this;
+      let buttonEvent = this;
       
       let timer = setInterval(function(){
         buttonEvent.degrees += 360.0 * (1 / 60);
@@ -126,7 +122,6 @@ class ButtonEvent{
           clearInterval(timer);
         }
       }, 1000 / 60);
-     
   }
 }
 
