@@ -36,7 +36,7 @@
 
 .buttons button{
     background: gray;
-    border: 1%;
+    border: solid 1%;
     border-radius: 5px;
     font-family: 'Alfa Slab One', cursive;
 
@@ -46,6 +46,13 @@
     1px 1px 0 black;
     margin: 1%;
     width: auto;
+}
+
+button:disabled,
+button[disabled]{
+  
+  background: #cccccc;
+  color: #666666;
 }
 
 .reset{
