@@ -53,8 +53,8 @@ for (let i = 0; i < navItems.length; i++){
 }
 let navParent = document.querySelector("nav");
 let appendA = document.createElement("a");
-appendA.setAttribute("href", "#");
-appendA.textContent = "Append";
+appendA.setAttribute("href", "./timer.html");
+appendA.textContent = "Timer";
 appendA.style.color = "green";
 navParent.append(appendA);
 
