@@ -48,7 +48,7 @@ let navItems = document.querySelectorAll(".container header nav a");
  
 for (let i = 0; i < navItems.length; i++){
   navItems[i].textContent = siteContent["nav"]["nav-item-" + (i + 1)];
-
+  navItems[i].style.color = "green";
  
 }
 
