@@ -47,3 +47,11 @@ header.setAttribute('src', siteContent["cta"]["img-src"]);
 let mainContent = document.getElementById("middle-img");
 mainContent.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
+let navItems = document.querySelectorAll(".container header nav a");
+ 
+for (let i = 0; i < navItems.length; i++){
+  navItems[i].textContent = siteContent["nav"]["nav-item-" + (i +1)];
+ 
+}
+
+
