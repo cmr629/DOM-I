@@ -21,7 +21,6 @@ class Timer{
         let str = value.split(".");
         let sTens = str[0].length > 1 ? str[0].substring(0, 1) : "0";
         let sOnes = str[0].length > 1 ? str[0].substring(1, 2) : str[0];
-        let test = str[0].length;
         
         document.getElementById("secondTens").textContent = sTens;
         document.getElementById("secondOnes").textContent = sOnes;
