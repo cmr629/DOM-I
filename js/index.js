@@ -51,7 +51,18 @@ for (let i = 0; i < navItems.length; i++){
   navItems[i].style.color = "green";
  
 }
+let navParent = document.querySelector("nav");
+let appendA = document.createElement("a");
+appendA.setAttribute("href", "#");
+appendA.textContent = "Append";
+appendA.style.color = "green";
+navParent.append(appendA);
 
+let prependA = document.createElement("a");
+prependA.setAttribute("href", "#");
+prependA.textContent = "Prepend";
+prependA.style.color = "green";
+navParent.prepend(prependA);
  
 
 document.querySelector(".cta-text h1").textContent = siteContent["cta"]["h1"];
