@@ -121,7 +121,7 @@ class ButtonEvent{
         
         if (buttonEvent.degrees >= 360){
           buttonEvent.degrees = 0;
-          buttonEvent.button.style.transform = `rotate($0deg)`;
+          buttonEvent.button.style.transform = `rotate(0deg)`;
           clearInterval(timer);
         }
       }, 1000 / 60);
