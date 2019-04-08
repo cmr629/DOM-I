@@ -51,6 +51,7 @@ for (let i = 0; i < navItems.length; i++){
   navItems[i].style.color = "green";
  
 }
+
 let navParent = document.querySelector("nav");
 let appendA = document.createElement("a");
 appendA.setAttribute("href", "./timer.html");
