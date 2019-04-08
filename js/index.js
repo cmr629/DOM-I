@@ -102,3 +102,31 @@ contactContent[2].textContent = siteContent["contact"]["email"];
 
 document.querySelector("footer p").textContent = siteContent["footer"]["copyright"];
 
+class ButtonEvent{
+  constructor(button){
+    this.button = button;
+    this.degrees = 0;
+
+    this.button.addEventListener("click", () => {this.onClick()});
+ 
+    
+  }
+
+  onClick(){
+      buttonEvent = this;
+      
+      let timer = setInterval(function(){
+        buttonEvent.degrees += 360.0 * (1 / 60);
+        buttonEvent.button.style.transform = `rotate(${buttonEvent.degrees}deg)`;
+        
+        if (buttonEvent.degrees >= 360){
+          buttonEvent.degrees = 0;
+          buttonEvent.button.style.transform = `rotate($0deg)`;
+          clearInterval(timer);
+        }
+      }, 1000 / 60);
+     
+  }
+}
+
+let buttonEvent = new ButtonEvent(document.querySelector(".cta-text button"));
