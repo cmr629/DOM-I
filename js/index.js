@@ -88,3 +88,6 @@ let contactContent = document.querySelectorAll(".contact p");
 contactContent[0].textContent = siteContent["contact"]["address"];
 contactContent[1].textContent = siteContent["contact"]["phone"];
 contactContent[2].textContent = siteContent["contact"]["email"];
+
+document.querySelector("footer p").textContent = siteContent["footer"]["copyright"];
+
