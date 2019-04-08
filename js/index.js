@@ -44,13 +44,13 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 let header = document.getElementById("cta-img");
 header.setAttribute('src', siteContent["cta"]["img-src"]);
 
-let mainContent = document.getElementById("middle-img");
-mainContent.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+let mainContentImg = document.getElementById("middle-img");
+mainContentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
 let navItems = document.querySelectorAll(".container header nav a");
  
 for (let i = 0; i < navItems.length; i++){
-  navItems[i].textContent = siteContent["nav"]["nav-item-" + (i +1)];
+  navItems[i].textContent = siteContent["nav"]["nav-item-" + (i + 1)];
  
 }
 
@@ -60,3 +60,25 @@ ctaH1.textContent = siteContent["cta"]["h1"];
 let ctaBtn = document.querySelector(".cta-text button");
 ctaBtn.textContent = siteContent["cta"]["button"];
 
+let mainContentTopH4 = document.querySelectorAll(".top-content .text-content h4");
+
+mainContentTopH4[0].textContent = siteContent["main-content"]["features-h4"];
+mainContentTopH4[1].textContent = siteContent["main-content"]["about-h4"];
+
+let mainContentTopP = document.querySelectorAll(".top-content .text-content p");
+
+mainContentTopP[0].textContent = siteContent["main-content"]["features-content"];
+mainContentTopP[1].textContent = siteContent["main-content"]["about-content"];
+
+
+let mainContentBottomH4 = document.querySelectorAll(".bottom-content .text-content h4");
+
+mainContentBottomH4[0].textContent = siteContent["main-content"]["services-h4"];
+mainContentBottomH4[1].textContent = siteContent["main-content"]["product-h4"];
+mainContentBottomH4[2].textContent = siteContent["main-content"]["vision-h4"];
+
+let mainContentBottomP = document.querySelectorAll(".bottom-content .text-content p");
+
+mainContentBottomP[0].textContent = siteContent["main-content"]["services-content"];
+mainContentBottomP[1].textContent = siteContent["main-content"]["product-content"];
+mainContentBottomP[2].textContent = siteContent["main-content"]["vision-content"];
