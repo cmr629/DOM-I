@@ -54,4 +54,9 @@ for (let i = 0; i < navItems.length; i++){
  
 }
 
+let ctaH1 = document.querySelector(".cta-text h1");
+ctaH1.textContent = siteContent["cta"]["h1"];
+ 
+let ctaBtn = document.querySelector(".cta-text button");
+ctaBtn.textContent = siteContent["cta"]["button"];
 
