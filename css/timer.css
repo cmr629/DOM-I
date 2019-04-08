@@ -1,25 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
 
+html {
+    font-size: 62.5%;
+  }
+
 .container{
     max-width:  800px;
     margin: 0 auto;
     padding: 5% 1.25%;
 }
  
-.timer h1{
+.digits{
     display: flex;
- 
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 
-    font-family: 'Alfa Slab One', cursive;
+  
     letter-spacing: 0.2em;
     color: black;
     padding: 0 10px;
 
     width: 100%;
 }
-  
+.digits .digit{
+    text-shadow: -1px -1px 0 black,
+    1px -1px 0 black,
+   -1px 1px 0 black,
+    1px 1px 0 black;
+    margin: 1%;
+    font-size: 5rem;
+    width: auto;
+}
 .buttons{
     display: flex;
     flex-direction: row;
@@ -67,7 +79,7 @@ button:disabled{
         margin: 0;
     }
 
-    .timer h1{
+    .digits .digit{
         padding: 0;
       margin: 0;
     
